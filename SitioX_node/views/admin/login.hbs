@@ -1,0 +1,28 @@
+<div class="container" style="margin:100px auto;">
+<div class="row">
+    <div class="col">
+        <from action="/admin/login" method="post">
+        <div class="from-group">
+            <label for="usuario">Usuario</label>
+            <input type="text" class="from-contol"
+            id="usuario" aria-describedby="emailHelp"
+            name="usuario">
+        </div>
+         <div class="from-group">
+            <label for="password">Password</label>
+            <input type="password" class="from-contol"
+            id="password" 
+            name="password">
+        </div>
+        <button type="submit" class="btn-primary">
+            Enviar
+        </button>
+        </from>
+        {{#if error}}
+        <p>Usuario o contraseña incorrecto</p>
+        {{/if}}
+    </div>
+
+</div>
+
+</div>
